@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Prueba JavaScript y JQuery</title>
+  <!-- JQuery 3.3.1 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <!-- FontAwesome v5.5.0 -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+<!-- 1.- Navbar   -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Twitter" src="assets/img/twitter-logo.png">
+        </a>
+      </div>
+    </div>
+  </nav>
+
+<!-- 2. Tweet Form -->
+<section class="container-fluid">
+  <div class="tweet-form-container col-md-6">
+        <h2 class="create__title">Nuevo Tweet</h2>
+
+        <form action="#" class="create__form" autocomplete="off">
+
+          <div class="create__display_images">
+            <div class="create__profile"><img src="assets/img/profile-photo.png" class="create__img"></div>
+
+            <label for="author" class="create__label--select">
+              <select name="author" id="author" class="create__select">
+                <option value="uk.png">Seleccione una Foto de Perfil</option>
+                <option value="she.jpg">Margot Robbie</option>
+                <option value="he.jpg">Ryan Reynolds</option>
+                <option value="mr.jpg">Barack Obama</option>
+                <option value="fl.jpg">Florcita Motuda</option>
+              </select>
+            </label>
+
+          </div>
+
+          <label for="username" class="create__label">
+            <input type="text" name="username" class="create__input" id="username" required>
+            <span class="create__placeholder">Nombre de Usuario</span>
+          </label>
+
+          <label for="text-area" class="create__label">
+            <input type="text" name="text-area" class="create__input" id="text-area" required>
+            <span class="create__placeholder">¿Qué está pasando?</span>
+          </label>
+
+          <input type="submit" value="Twittear" class="create__submit">
+        </form>
+  </div>
+</section>
+</body>
+</html>
