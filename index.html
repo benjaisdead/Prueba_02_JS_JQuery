@@ -19,6 +19,9 @@
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+  <!-- Google Font - Roboto (300, 400 & 700) -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+
   <!-- FontAwesome v5.5.0 -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
@@ -34,41 +37,56 @@
     </div>
   </nav>
 
-<!-- 2. Tweet Form -->
-<section class="container-fluid">
-  <div class="tweet-form-container col-md-6">
-        <h2 class="create__title">Nuevo Tweet</h2>
-
+<!-- 2. Create Tweet Section -->
+  <div class="container-fluid col-md-5 col-sm-12 col-xs-12">
+    <section class="create">
+      <h2 class="create__title">Twittear</h2>
         <form action="#" class="create__form" autocomplete="off">
-
-          <div class="create__display_images">
-            <div class="create__profile"><img src="assets/img/profile-photo.png" class="create__img"></div>
-
-            <label for="author" class="create__label--select">
-              <select name="author" id="author" class="create__select">
-                <option value="uk.png">Seleccione una Foto de Perfil</option>
-                <option value="she.jpg">Margot Robbie</option>
-                <option value="he.jpg">Ryan Reynolds</option>
-                <option value="mr.jpg">Barack Obama</option>
-                <option value="fl.jpg">Florcita Motuda</option>
+          <div class="create__image">
+            <div class="create__profile"><img src="assets/img/profile-blank.png" class="create__img"> </div>
+            <label for="image" class="create__label--select">
+              <select name="image" id="image" class="create__select">
+                <option value="uk.png">Seleccione una Imagen</option>
+                <option value="01.jpg">imagen 01</option>
+                <option value="02.jpg">imagen 02</option>
+                <option value="03.jpg">imagen 03</option>
+                <option value="04.jpg">imagen 04</option>
+                <option value="05.jpg">imagen 05</option>
               </select>
             </label>
-
           </div>
-
-          <label for="username" class="create__label">
-            <input type="text" name="username" class="create__input" id="username" required>
-            <span class="create__placeholder">Nombre de Usuario</span>
-          </label>
-
-          <label for="text-area" class="create__label">
-            <input type="text" name="text-area" class="create__input" id="text-area" required>
-            <span class="create__placeholder">¿Qué está pasando?</span>
-          </label>
-
-          <input type="submit" value="Twittear" class="create__submit">
+            <textarea class="form-control create__textarea--username" id="exampleFormControlTextarea1" rows="1" placeholder="Escribe tu nombre de usuario"></textarea>
+              <textarea class="form-control create__textarea--tweet" id="exampleFormControlTextarea1" rows="3" placeholder="¿Qué estás pensando?"></textarea>
+                <input type="submit" value="Twittear" class="create__submit">
         </form>
+    </section>
   </div>
-</section>
+
+<!-- 3. Dashboard Section -->
+<div class="container-fluid col-md-7 col-sm-12 col-xs-12">
+  <ul class="dashboard">
+    <div class="row">
+      <li class="tweet">
+        <div class="tweet__profile">
+          <img src="assets/img/profile-blank.png" class="tweet_img">
+        </div>
+          <div class="tweet__username">
+            <h2>@benjaisdead</h2>
+          </div>
+            <div class="tweet__content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <a class="tweet__like">
+                  <i class="fas fa-heart"></i>
+                </a>
+                  <div class="tweet__counter">
+                    <p>1</p>
+                  </div>
+      </li>
+    </div>
+  </ul>
+</div>
+
+
+
 </body>
 </html>
