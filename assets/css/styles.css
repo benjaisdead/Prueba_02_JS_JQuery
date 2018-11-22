@@ -1,6 +1,9 @@
 a:hover{
   color: red;
 }
+.fas{
+  cursor: pointer;
+}
 i{
   font-style: normal;
 }
