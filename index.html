@@ -5,7 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Prueba JavaScript y JQuery</title>
   <!-- JQuery 3.3.1 -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <script src="assets/js/jquery-3.3.1.js"></script>
+  <script src="assets/js/script.js"></script>
 
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -38,54 +39,62 @@
   </nav>
 
 <!-- 2. Create Tweet Section -->
-  <div class="container-fluid col-md-5 col-sm-12 col-xs-12">
+  <div class="container-fluid col-md-5 col-sm-5 col-xs-12">
     <section class="create">
       <h2 class="create__title">Twittear</h2>
         <form action="#" class="create__form" autocomplete="off">
-          <div class="create__image">
-            <div class="create__profile"><img src="assets/img/profile-blank.png" class="create__img"> </div>
+
+          <div class="create__display_images">
+            <div class="create__profile"><img src="assets/img/profile-img/profile-blank.png" class="create__img"></div>
+
             <label for="image" class="create__label--select">
               <select name="image" id="image" class="create__select">
-                <option value="uk.png">Seleccione una Imagen</option>
-                <option value="01.jpg">imagen 01</option>
-                <option value="02.jpg">imagen 02</option>
-                <option value="03.jpg">imagen 03</option>
-                <option value="04.jpg">imagen 04</option>
-                <option value="05.jpg">imagen 05</option>
+                <option value="profile-blank.png">Seleccione una Imagen</option>
+                <option value="profile-01.jpg">imagen 01</option>
+                <option value="profile-02.jpg">imagen 02</option>
+                <option value="profile-03.jpg">imagen 03</option>
+                <option value="profile-04.jpg">imagen 04</option>
+                <option value="profile-05.jpg">imagen 05</option>
+
               </select>
             </label>
+
           </div>
             <textarea class="form-control create__textarea--username" id="exampleFormControlTextarea1" rows="1" placeholder="Escribe tu nombre de usuario"></textarea>
               <textarea class="form-control create__textarea--tweet" id="exampleFormControlTextarea1" rows="3" placeholder="¿Qué estás pensando?"></textarea>
+
                 <input type="submit" value="Twittear" class="create__submit">
         </form>
     </section>
   </div>
 
 <!-- 3. Dashboard Section -->
-<div class="container-fluid col-md-7 col-sm-12 col-xs-12">
-  <ul class="dashboard">
-    <div class="row">
+  <ul class="dashboard  col-md-7 col-sm-7 col-xs-12">
+
       <li class="tweet">
         <div class="tweet__profile">
-          <img src="assets/img/profile-blank.png" class="tweet_img">
+          <img src="assets/img/profile-img/profile-03.jpg" class="tweet_img">
+        </div>
+        <div class="tweet__pin">
+          <i class="fas fa-times-circle"></i>
         </div>
           <div class="tweet__username">
-            <h2>@benjaisdead</h2>
+            <h2>Benjamín Ortega Núñez</h2>
           </div>
             <div class="tweet__content">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <a class="tweet__like">
+            </div>
+                <a class="tweet__like tweet__like--btn">
                   <i class="fas fa-heart"></i>
                 </a>
                   <div class="tweet__counter">
-                    <p>1</p>
+                    0
                   </div>
       </li>
-    </div>
-  </ul>
-</div>
 
+
+
+  </ul>
 
 
 </body>

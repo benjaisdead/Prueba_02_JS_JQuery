@@ -1,3 +1,6 @@
+a:hover{
+  color: red;
+}
 .navbar-brand {
   padding: 5px;
 }
@@ -27,7 +30,7 @@
   padding-top: 20px;
   padding-bottom: 10px;
 }
-.create__image img {
+.create__profile img {
   border-radius: 50%;
   max-height: 200px;
   margin-bottom: 5%;
@@ -106,19 +109,31 @@ li {
   font-family: 'Roboto';
   font-weight: 300;
 }
+.tweet__like--red {
+  font-size: 2em;
+  position: absolute;
+  bottom: 6%;
+  color: red;
+  left: 40%;
+}
 .tweet__like {
   font-size: 2em;
-  clear: both;
-  float: left;
+  bottom: 6%;
   position: absolute;
   color: #bebebd;
   left: 40%;
 }
-.tweet__counter p{
-  font-size: 2em;
-  color: #bebebd;
-  float: left;
+.tweet__counter{
   font-family: 'Roboto';
+  font-size: 2em;
   position: absolute;
-  left: 50%;
+  bottom: 6%;
+  left: 48%;
+}
+.tweet__pin{
+  font-size: 2em;
+  top: 6%;
+  position: absolute;
+  color: #00ACEE;
+  right: 6%;
 }
