@@ -1,19 +1,11 @@
 $(function(){
 
-// Tweet Like
-$('.dashboard').on('click', '.tweet__like', function(event){
+
+// Tweet Like & Counter
+$(document).on('click', '.fa-heart', function(){
   $(this).addClass('tweet__like--red');
   $(this).removeClass('tweet__like')
-  event.preventDefault();
-  event.stopPropagation();
-})
-
-// Tweet Counter
-$('.dashboard').on('click', '.tweet__like--btn', function(event){
-  $('.dashboard').children('.tweet').children('.tweet__counter').html(function(i, val){
-    return val*1+1
-    event.stopPropagation();
-  })
+  .siblings('.tweet__output').html(function (i, val){ return val*1+1})
 })
 
 // Close Pin
@@ -48,12 +40,8 @@ $('.create__form').on('submit', function(event){
           <div class="tweet__content">
             <p>${ tweet }</p>
           </div>
-              <a class=" tweet__like tweet__like--btn">
-                <i class="fas fa-heart"></i>
-              </a>
-                <div class="tweet__counter">
-                  0
-                </div>
+                <i class="fas fa-heart tweet__like tweet__like--btn"></i>
+                <i class="tweet__output">0</i>
     </li>`
 
     $('.dashboard').append(html);
