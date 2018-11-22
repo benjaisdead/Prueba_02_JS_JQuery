@@ -9,12 +9,11 @@ $('.dashboard').on('click', '.tweet__like', function(event){
 })
 
 // Tweet Counter
-  $('ul').on('click', 'a', function(event){
-  event.stopPropagation()
-  counter = $('div:last').text();
-  counter = parseInt(counter);
-  console.log(counter + 1);
-  $('div:last').text(counter + 1)
+$('.dashboard').on('click', '.tweet__like--btn', function(event){
+  $('.dashboard').children('.tweet').children('.tweet__counter').html(function(i, val){
+    return val*1+1
+    event.stopPropagation();
+  })
 })
 
 // Close Pin
@@ -49,7 +48,7 @@ $('.create__form').on('submit', function(event){
           <div class="tweet__content">
             <p>${ tweet }</p>
           </div>
-              <a class="tweet__like--red tweet__like">
+              <a class=" tweet__like tweet__like--btn">
                 <i class="fas fa-heart"></i>
               </a>
                 <div class="tweet__counter">
